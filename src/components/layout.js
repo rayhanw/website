@@ -6,13 +6,29 @@
  */
 
 import React from "react"
-import PropTypes from "prop-types"
+import { ThemeToggler } from "gatsby-plugin-dark-mode"
 
-import "./layout.css"
+import "./styles/layout.css"
+import "./styles/toggle.css"
 
 const Layout = ({ children }) => {
   return (
     <>
+      <ThemeToggler>
+        {({ theme, toggleTheme }) => (
+          <div className="switch-box">
+            <label className="switch">
+              <input
+                type="checkbox"
+                id="toggler"
+                checked={theme === "dark"}
+                onChange={e => toggleTheme(e.target.checked ? "dark" : "light")}
+              />
+              <span className="slider round"></span>
+            </label>
+          </div>
+        )}
+      </ThemeToggler>
       <div
         style={{
           margin: `0 auto`,
@@ -30,10 +46,6 @@ const Layout = ({ children }) => {
       </div>
     </>
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Layout
