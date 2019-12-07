@@ -6,29 +6,14 @@
  */
 
 import React from "react"
-import { ThemeToggler } from "gatsby-plugin-dark-mode"
+import ThemeToggler from "./themeToggler"
 
 import "./styles/layout.css"
-import "./styles/toggle.css"
 
 const Layout = ({ children }) => {
   return (
     <>
-      <ThemeToggler>
-        {({ theme, toggleTheme }) => (
-          <div className="switch-box">
-            <label className="switch">
-              <input
-                type="checkbox"
-                id="toggler"
-                checked={theme === "dark"}
-                onChange={e => toggleTheme(e.target.checked ? "dark" : "light")}
-              />
-              <span className="slider round"></span>
-            </label>
-          </div>
-        )}
-      </ThemeToggler>
+      <ThemeToggler />
       <div
         style={{
           margin: `0 auto`,
