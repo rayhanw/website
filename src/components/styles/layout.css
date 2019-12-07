@@ -746,6 +746,11 @@ pre tt:after {
   content: "";
 }
 
+.gatsby-image-wrapper {
+  height: 300px;
+  width: 300px;
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
