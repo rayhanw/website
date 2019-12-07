@@ -41,7 +41,11 @@ h6 {
 }
 
 p,
-span {
+span,
+div,
+header,
+main,
+footer {
   color: var(--textNormal);
 }
 
