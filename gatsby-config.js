@@ -1,10 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Rayhan W | Full-stack web developer`,
+    title: `Rayhan Wirjowerdojo`,
     description: `Fullstack Developer | I write good codes for a living.`,
     author: `@rayhanw`,
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-dark-mode`,
     `gatsby-plugin-react-helmet`,
     {
