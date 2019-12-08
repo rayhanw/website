@@ -2,6 +2,8 @@ import React from "react"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
+import Description from "../components/description"
+import ExternalLinks from "../components/externalLinks/externalLinks"
 import SEO from "../components/seo"
 
 import {
@@ -21,6 +23,8 @@ const IndexPage = () => (
         </HeaderTextContainer>
         <Image />
       </HeaderContainer>
+      <ExternalLinks />
+      <Description />
     </CenterContainer>
   </Layout>
 )
