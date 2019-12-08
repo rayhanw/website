@@ -16,6 +16,7 @@ body {
   --textTitle: #222;
   --textLink: blue;
   --textHoverLink: rgb(184, 41, 184);
+  --textActive: rgb(235, 40, 253);
   --hr: hsla(0, 0%, 0%, 0.2);
 
   background-color: var(--bg);
@@ -30,7 +31,12 @@ body.dark {
   --textTitle: white;
   --textLink: yellow;
   --textHoverLink: #cea81e;
+  --textActive: rgb(255, 136, 0);
   --hr: hsla(0, 0%, 100%, 0.2);
+}
+
+body:not(.dark) header {
+  background-color: rgb(247, 243, 243);
 }
 
 h1,
@@ -759,6 +765,10 @@ pre tt:after {
 
 a {
   transition: color 0.25s ease;
+}
+
+a.active {
+  color: var(--textActive);
 }
 
 a:hover {
