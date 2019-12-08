@@ -753,6 +753,18 @@ pre tt:after {
   width: 300px;
 }
 
+.gatsby-image-wrapper img {
+  border-radius: 50%;
+}
+
+a {
+  transition: color 0.25s ease;
+}
+
+a:hover {
+  color: var(--textHoverLink);
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
