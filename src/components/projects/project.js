@@ -6,9 +6,9 @@ import { ProjectCard } from "../../styled-components"
 const Project = ({ name, githubLink, projectLink, image }) => {
   return (
     <ProjectCard image={image}>
-      <h3>{name}</h3>
-      <ProjectActions github={githubLink} project={projectLink} />
+      <h4>{name}</h4>
       <img src={image} alt={name} />
+      <ProjectActions github={githubLink} project={projectLink} />
     </ProjectCard>
   )
 }
