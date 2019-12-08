@@ -21,7 +21,6 @@ const BlogTemplate = ({ data }) => {
   const options = {
     renderNode: {
       "embedded-asset-block": node => {
-        console.log(node)
         const alt = node.data.target.fields.title["en-US"]
         const src = node.data.target.fields.file["en-US"].url
         return <img alt={alt} src={src} height={300} width={300} />
