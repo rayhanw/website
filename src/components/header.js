@@ -1,16 +1,17 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import ThemeToggler from "./themeToggler"
-import { HeaderBox, StyledLink } from "../styled-components"
+import { HeaderBox } from "../styled-components"
 
 const Header = () => (
   <HeaderBox>
     <ul>
       <li>
-        <StyledLink to="/">Home</StyledLink>
+        <Link to="/">Home</Link>
       </li>
       <li>
-        <StyledLink to="/blog">Blog</StyledLink>
+        <Link to="/blog">Blog</Link>
       </li>
     </ul>
     <ThemeToggler />
