@@ -90,14 +90,21 @@ export const ProjectCard = styled.div`
   background-size: cover;
   background-position: center top;
   transition: 0.25s ease-in-out;
-  width: 340px;
-  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgba(200, 200, 200, 0.2);
+  > h4 {
+    margin-bottom: 1rem;
+    font-size: 22px;
+  }
   > * {
     text-align: center;
+  }
+  > img {
+    width: 400px;
+    height: 240px;
   }
 `
 
@@ -116,5 +123,29 @@ export const ProjectActionBar = styled.div`
   a,
   i {
     font-size: 28px;
+  }
+`
+
+export const Section = styled.section`
+  margin-top: 2rem;
+`
+
+export const LinkList = styled.ul`
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  list-style: none;
+  margin-top: 1rem;
+  width: 80%;
+  li {
+    margin-bottom: 0;
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  li:last-child {
+    margin-right: 0;
+  }
+  li a {
+    font-size: 32px;
   }
 `
