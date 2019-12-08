@@ -10,9 +10,20 @@ export const CenterContainer = styled.div`
   }
 `
 
-export const HeaderContainer = styled.div`
+export const HeaderTextContainer = styled.div`
   h2 {
     color: #96979c;
+  }
+`
+
+export const HeaderContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  h1 {
+    margin-top: 0;
+    margin-right: 2rem;
   }
 `
 
