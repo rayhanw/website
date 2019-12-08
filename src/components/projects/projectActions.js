@@ -8,10 +8,10 @@ import { ProjectActionBar } from "../../styled-components"
 const ProjectActions = ({ github, project }) => {
   return (
     <ProjectActionBar>
-      <a href={github}>
+      <a href={github} target="_blank" rel="noreferrer noopener">
         <FontAwesomeIcon icon={faGithub} />
       </a>
-      <a href={project}>
+      <a href={project} target="_blank" rel="noreferrer noopener">
         <FontAwesomeIcon icon={faExternalLinkAlt} />
       </a>
     </ProjectActionBar>
