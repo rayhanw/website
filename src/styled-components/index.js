@@ -60,6 +60,7 @@ export const HeaderBox = styled.header`
   padding: 1rem 2rem;
   background-color: rgba(255, 255, 255, 0.2);
   margin-bottom: 1rem;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
   > ul {
     display: inline-block;
     list-style: none;
@@ -78,5 +79,41 @@ export const StyledLink = styled(Link)`
   transition: color 0.25s ease;
   &:hover {
     color: var(--textHoverLink);
+  }
+`
+
+export const ProjectCard = styled.div`
+  padding: 1rem 2rem;
+  justify-self: center;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center top;
+  transition: 0.25s ease-in-out;
+  width: 340px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  > * {
+    text-align: center;
+  }
+`
+
+export const ProjectGrid = styled.div`
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: auto auto;
+  justify-content: center;
+`
+
+export const ProjectActionBar = styled.div`
+  display: inline-block;
+  > :first-child {
+    margin-right: 1rem;
+  }
+  a,
+  i {
+    font-size: 28px;
   }
 `
