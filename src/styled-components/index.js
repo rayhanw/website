@@ -37,6 +37,7 @@ export const BlogBox = styled(Link)`
   border-radius: 4px;
   transition: background-color 0.25s ease;
   text-decoration: none;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
   &:hover {
     background-color: rgba(200, 200, 200, 0.3);
   }
