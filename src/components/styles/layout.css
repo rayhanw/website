@@ -29,7 +29,7 @@ body.dark {
   --textNormal: rgba(255, 255, 255, 0.88);
   --textTitle: white;
   --textLink: yellow;
-  --textHoverLink: #f8de7e;
+  --textHoverLink: #cea81e;
   --hr: hsla(0, 0%, 100%, 0.2);
 }
 
