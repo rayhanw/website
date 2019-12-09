@@ -6,7 +6,7 @@ const Blog = ({ node }) => {
   const { title, slug, publishedDate } = node
 
   return (
-    <BlogBox to={`/blog/${slug}`}>
+    <BlogBox to={`/blog/${slug}`} className="blog-box">
       <h3>
         <i>{title}</i>
       </h3>
