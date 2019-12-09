@@ -34,33 +34,38 @@
 
 .slider:before {
   position: absolute;
-  content: "";
+  content: "🌞";
   height: 26px;
   width: 26px;
   left: 4px;
   bottom: 3px;
-  background-color: black;
+  font-size: 26px;
   border: 1px solid white;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-#toggler:checked + .slider {
-  background-color: black;
+/* Slider customization on checked */
+#toggler:checked+.slider {
   border: 1px solid white;
 }
 
-#toggler:focus + .slider {
+/* Slider customization of toggler being focused */
+#toggler:focus+.slider {
   box-shadow: 0 0 1px #2196f3;
 }
 
-#toggler:checked + .slider:before {
+/* Activated toggle */
+#toggler:checked+.slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
+  content: "🌚";
+  background-color: transparent;
 }
 
-#toggler:not(:checked) + .slider:before {
+/* Slider customization on toggler off */
+#toggler:not(:checked)+.slider:before {
   border: 0;
 }
 
