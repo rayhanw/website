@@ -32,7 +32,7 @@ export const BlogBox = styled(Link)`
   flex-direction: column;
   padding: 1rem 2rem;
   width: 100%;
-  background-color: rgba(200, 200, 200, 0.1);
+  background-color: var(--boxColor);
   margin-bottom: 1rem;
   border-radius: 4px;
   transition: background-color 0.25s ease;
