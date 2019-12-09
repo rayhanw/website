@@ -17,6 +17,7 @@ body {
   --textLink: blue;
   --textHoverLink: rgb(184, 41, 184);
   --textActive: rgb(235, 40, 253);
+  --boxColor: rgba(221, 218, 218, 0.2);
   --hr: hsla(0, 0%, 0%, 0.2);
 
   background-color: var(--bg);
@@ -32,11 +33,20 @@ body.dark {
   --textLink: yellow;
   --textHoverLink: #cea81e;
   --textActive: rgb(255, 136, 0);
+  --boxColor: rgba(200, 200, 200, 0.1);
   --hr: hsla(0, 0%, 100%, 0.2);
 }
 
 body:not(.dark) header {
   background-color: rgb(247, 243, 243);
+}
+
+body:not(.dark) .blog-box {
+  background-color: var(--boxColor);
+}
+
+body:not(.dark) .blog-box:hover {
+  background-color: rgba(200, 200, 200, 0.5);
 }
 
 h1,
@@ -636,13 +646,13 @@ ul li {
   padding-left: 0;
 }
 
-li > ol {
+li>ol {
   margin-left: 1.45rem;
   margin-bottom: calc(1.45rem / 2);
   margin-top: calc(1.45rem / 2);
 }
 
-li > ul {
+li>ul {
   margin-left: 1.45rem;
   margin-bottom: calc(1.45rem / 2);
   margin-top: calc(1.45rem / 2);
@@ -660,7 +670,7 @@ p *:last-child {
   margin-bottom: 0;
 }
 
-li > p {
+li>p {
   margin-bottom: calc(1.45rem / 2);
 }
 
