@@ -19,7 +19,7 @@ const projects = [
   {
     name: "A simple Airbnb mockup",
     githubLink: "https://github.com/rayhanw/rails-simple-airbnb",
-    projectLink: "",
+    projectLink: null,
     image: "03-placeholder"
   },
   {
