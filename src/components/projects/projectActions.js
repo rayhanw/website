@@ -11,9 +11,11 @@ const ProjectActions = ({ github, project }) => {
       <a href={github} target="_blank" rel="noreferrer noopener">
         <FontAwesomeIcon icon={faGithub} />
       </a>
-      <a href={project} target="_blank" rel="noreferrer noopener">
-        <FontAwesomeIcon icon={faExternalLinkAlt} />
-      </a>
+      {project ? (
+        <a href={project} target="_blank" rel="noreferrer noopener">
+          <FontAwesomeIcon icon={faExternalLinkAlt} />
+        </a>
+      ) : null}
     </ProjectActionBar>
   )
 }
