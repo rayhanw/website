@@ -37,7 +37,7 @@
   content: "🌞";
   height: 26px;
   width: 26px;
-  left: 4px;
+  /* left: 1px; */
   bottom: 3px;
   font-size: 26px;
   border: 1px solid white;
@@ -64,6 +64,11 @@
   background-color: transparent;
 }
 
+#toggler:checked+.slider,
+.slider:before {
+  border: 0;
+}
+
 /* Slider customization on toggler off */
 #toggler:not(:checked)+.slider:before {
   border: 0;
@@ -76,4 +81,16 @@
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+@media (min-width: 900px) {
+  .slider:before {
+    left: 4px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .slider:before {
+    left: 0;
+  }
 }
