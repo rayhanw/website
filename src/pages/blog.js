@@ -27,11 +27,7 @@ const Blog = () => {
     <Layout>
       <CenterContainer>
         <SEO title="Blog" />
-        <h1>Coming soon!</h1>
-        <p>
-          Stay tuned for more content. In the meantime, enjoy these random
-          posts!
-        </p>
+        <h1>Posts</h1>
         <Blogs blogs={edges} />
         <Link to="/">Back to home page</Link>
       </CenterContainer>
