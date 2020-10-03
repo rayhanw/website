@@ -25,6 +25,15 @@ export const HeaderContainer = styled.div`
     margin-top: 0;
     margin-right: 2rem;
   }
+
+  @media only screen and (max-width: 499px) {
+    flex-direction: column;
+    text-align: center;
+
+    h1 {
+      margin-right: 0;
+    }
+  }
 `
 
 export const BlogBox = styled(Link)`
@@ -128,6 +137,12 @@ export const ProjectActionBar = styled.div`
 
 export const Section = styled.section`
   margin-top: 2rem;
+
+  @media only screen and (max-width: 499px) {
+    p {
+      text-align: center;
+    }
+  }
 `
 
 export const LinkList = styled.ul`
@@ -147,5 +162,9 @@ export const LinkList = styled.ul`
   }
   li a {
     font-size: 32px;
+  }
+
+  @media only screen and (max-width: 499px) {
+    width: unset;
   }
 `
