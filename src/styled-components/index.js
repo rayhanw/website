@@ -83,6 +83,14 @@ export const HeaderBox = styled.header`
       margin-right: 0.5rem;
     }
   }
+
+  @media only screen and (max-width: 499px) {
+    > ul {
+      > li {
+        font-size: 1.2em;
+      }
+    }
+  }
 `
 
 export const StyledLink = styled(Link)`
@@ -122,6 +130,10 @@ export const ProjectGrid = styled.div`
   grid-gap: 1rem;
   grid-template-columns: auto auto;
   justify-content: center;
+
+  @media only screen and (max-width: 499px) {
+    grid-template-columns: auto;
+  }
 `
 
 export const ProjectActionBar = styled.div`
